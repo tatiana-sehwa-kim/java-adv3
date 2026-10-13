@@ -27,4 +27,4 @@ public class LambdaPassMain2 {
         System.out.println("계산 결과 = " + result);
     }
 }
-
+//        고차 함수는 함수를 인자로 받거나 함수를 반환한다.
