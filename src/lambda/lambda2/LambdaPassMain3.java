@@ -27,3 +27,5 @@ public class LambdaPassMain3 {
         }
     }
 }
+
+// 고차 함수는 함수를 인자로 받거나 함수를 반환한다.
