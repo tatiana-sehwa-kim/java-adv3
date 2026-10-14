@@ -25,7 +25,7 @@ public class MapExample {
         System.out.println("upperCase = " + upperCase);
 
         // 2. 앞뒤에 *** 붙이기 (람다로 작성)
-        List<String> threeStart = map(words, s -> "***" + s + "***");
-        System.out.println("threeStart = " + threeStart);
+        List<String> deco = map(words, s -> "***" + s + "***");
+        System.out.println("deco = " + deco);
     }
 }
