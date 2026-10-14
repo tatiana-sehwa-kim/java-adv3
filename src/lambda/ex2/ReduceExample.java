@@ -28,3 +28,5 @@ public class ReduceExample {
         System.out.println("multiply = " + multiply);
     }
 }
+
+//    여러 값을 계산해서 하나의 최종 값을 반환하는 경우 reduce(축약하다) , fold(접는다) 같은 단어를 사용한다.
