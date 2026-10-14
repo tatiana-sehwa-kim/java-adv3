@@ -3,7 +3,7 @@ package lambda.ex2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FilterExample {
+public class FilterExampleEx2 {
 
     // 고차 함수, 함수를 인자로 받아서 조건에 맞는 요소만 뽑아내는 filter
     public static List<Integer> filter(List<Integer> list, MyPredicate predicate) {
@@ -41,4 +41,4 @@ public class FilterExample {
         });
         System.out.println("짝수만: " + even);
     }
-}
+} // 익명클래스 ver.
