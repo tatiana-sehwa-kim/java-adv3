@@ -2,6 +2,7 @@ package lambda.lambda5.mystream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -41,4 +42,9 @@ public class MyStreamV3<T> {
         return internalList;
     }
 
+    public void forEach(Consumer<T> consumer) {
+        for (T element : internalList) {
+            consumer.accept(element);       // 반환없이 소비하는 Consumer
+        }
+    }
 }
