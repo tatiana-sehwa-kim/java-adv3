@@ -42,6 +42,7 @@ public class MyStreamV3<T> {
         return internalList;
     }
 
+    // 스트림 만들기 4
     public void forEach(Consumer<T> consumer) {
         for (T element : internalList) {
             consumer.accept(element);       // 반환없이 소비하는 Consumer
