@@ -34,3 +34,8 @@ public class MyStreamLoopMain {
 //    name: Banana
 //    name: Apple
 //    name: Banana
+
+//    내부 반복 vs 외부 반복
+//    외부 반복: 기존의 for , while 루프처럼, 개발자가 반복 제어를 직접 담당하며 명령형 스타일이다. 중간 에 break , continue 등이 들어가는 로직을 구현하기 쉽다.
+//    내부 반복: 스트림의 forEach 처럼, 반복 제어를 스트림에 맡기고 개발자는 "어떤 작업을 할지
+//            ( Consumer )"만 정의하면 된다. 이는 선언형 프로그래밍 스타일로써 코드가 짧고 의도가 명확하다.
