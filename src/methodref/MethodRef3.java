@@ -1,0 +1,30 @@
+package methodref;
+
+import java.util.function.Function;
+
+public class MethodRef3 {
+    public static void main(String[] args) {
+
+        //4. 임의 객체의 인스턴스 메서드 참조(특정 타입의)
+        Person person1 = new Person("Kim");
+        Person person2 = new Person("Park");
+        Person person3 = new Person("Lee");
+
+        //람다
+        Function<Person, String> fun1 = (Person person) -> person.introduce();
+        System.out.println("person1.introduce = " + fun1.apply(person1));
+        System.out.println("person2.introduce = " + fun1.apply(person2));
+        System.out.println("person3.introduce = " + fun1.apply(person3));
+
+        // 메서드 참조, 타입이 첫 번째 매개변수가 됨,
+        // 그리고 첫 번째 매개변수의 메서드를 호출, 나머지는 순서대로 매개변수에 전달       타입::인스턴스메서드
+        Function<Person, String> fun2 = Person::introduce;
+        System.out.println("person1.introduce = " + fun2.apply(person1));
+        System.out.println("person2.introduce = " + fun2.apply(person2));
+        System.out.println("person3.introduce = " + fun2.apply(person3));
+    }
+}
+
+//    MethodRefEx2에 있는 특정 객체의 인스턴스 참조는 객체는 정해진 상태에서 그다음 메서드를 참조하는거고 (주어가 정해진 상태)
+//    임의 객체의 인스턴스 참조는 객체가 정해지지 않은 상태에서, 정해질 객체와 메서드를 참조하는것 (~ 주어가 오면 ~를 실행해라)
+
