@@ -48,4 +48,9 @@ public class MyStreamV3<T> {
             consumer.accept(element);       // 반환없이 소비하는 Consumer
         }
     }
+
+    // 추가 for stream.basic.LazyEvalMain3
+    public T getFirst() {
+        return internalList.get(0);
+    }
 }
