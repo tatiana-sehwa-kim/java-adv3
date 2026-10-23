@@ -41,6 +41,11 @@ public class OptionalRetrievalMain {
             return "New Value";
         });
 
+//            === 4. orElseGet() ===
+//            람다 호출 - optValue
+//            value2 = Hello
+//            empty2 = New Value
+
         System.out.println("value2 = " + value2);       // value2 = Hello
         System.out.println("empty2 = " + empty2);       // empty2 = New Value
 
