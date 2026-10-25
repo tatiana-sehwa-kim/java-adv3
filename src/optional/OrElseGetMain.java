@@ -27,7 +27,7 @@ public class OrElseGetMain {
         System.out.println("empty1 = " + empty1);
             // 있어도 생성, 없어도 생성 createData(). "빈 값이면 other" 에서 other을 "항상" 미리 계산한다. "즉시 평가"
 
-            // 값이 있으면 그 값, 없으면 지정된 람다 사용
+            // 값이 있으면 그 값, 없으면 지정된 람다 사용 Supplier
         System.out.println("=== orElse ===");
         System.out.println("값이 있는 경우");
         Integer value2 = optValue.orElseGet(() -> createData());    // OrElseGetMain::createData
