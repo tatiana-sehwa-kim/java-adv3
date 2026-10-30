@@ -46,6 +46,6 @@ public class SideEffectListMain {
 //    after list2 = [apple, banana]
 //    result = [apple_complete, banana_complete]
 
-//    changeList1 함수는 리스트 원본을 직접 변경함으로써 부수 효과를 일으킨다.
+//    changeList1 함수는 리스트 원본을 직접 변경함으로써 부수 효과를 일으킨다..
 //    반면 changeList2 함수는 새로운 리스트를 생성해서 반환함으로써, 원본 리스트를 변경하지 않는다.
 //    함수형 프로그래밍에서는 changeList2 와 같은 방식이 권장된다.

@@ -13,6 +13,7 @@ public class SideEffectMain3 {
         // 부수 효과는 순수 함수와 분리해서 실행
         // 출력은 별도로 처리해 순수성 유지
         System.out.println("x = " + x + ", result = " + result);
+
     }
 }
 
